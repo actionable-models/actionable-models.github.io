@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>MT-Opt</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>Actionable Models</b>: </br> Unsupervised Offline Reinforcement Learning of Robotic Skills</br> 
+                <small>
+                    arXiv 2021
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                         Yevgen Chebotar
+                    </li>
+                    <li>
+                        Karol Hausman
+                    </li>
+                    <li>
+                        Yao Lu
+                    </li>
+                    <li>
+                        Ted Xiao
+                    </li><br>
+                    <li>
+                        Dmitry Kalashnikov
+                    </li>
+                    <li>
+                        Jake Varley
+                    </li>
+                    <li>
+                       Alex Irpan
+                    </li>
+                    <li>
+                       Benjamin Eysenbach
+                    </li>
+                    <li>
+                        Ryan Julian
+                    </li>
+                    <li>
+                        Chelsea Finn
+                    </li>
+                    <li>
+                        Sergey Levine
+                    </li>
+                    <br><br>
+                    <a href="https://research.google/teams/brain/robotics/">
+                    <image src="img/robotics-at-google.png" height="40px"> Robotics at Google</a> <br><br>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="arxiv.com">
+                            <image src="img/mip_paper_image.jpg" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=9JHVyjDWihI">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ai.googleblog.com">
+                            <image src="img/google-ai-blog-small.png" height="60px">
+                                <h4><strong>Blogpost</strong></h4>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://github.com/">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p style="text-align:center;">
+        	    <image src="img/grid_results.gif" class="img-responsive">
+                </p>
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+We consider the problem of learning useful robotic skills from previously collected offline data without access to manually specified rewards or additional online exploration, a setting that is becoming increasingly important for scaling robot learning by reusing past robotic data. In particular, we propose the objective of learning a functional understanding of the environment by learning to reach any goal state in a given dataset. We employ goal-conditioned Q-learning with hindsight relabeling and develop several techniques that enable training in a particularly challenging offline setting. We find that our method can operate on high-dimensional camera images and learn a variety of skills on real robots that generalize to previously unseen scenes and objects. We also show that our method can learn to reach long-horizon goals across multiple episodes, and learn rich representations that can help with downstream tasks through pre-training or auxiliary objectives.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9JHVyjDWihI" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{actionablemodels2021arxiv,
+    title={Actionable Models: Unsupervised Offline Reinforcement Learning of Robotic Skills},
+    author={Yevgen Chebotar and Karol Hausman and Yao Lu and Ted Xiao and Dmitry Kalashnikov and 
+            Jake Varley and Alex Irpan and Benjamin Eysenbach and Ryan Julian and Chelsea Finn and Sergey Levine},
+    journal={arXiv},
+    year={2021}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank Josh Weaver, Noah Brown and Brandon Kinman for their robot operation support. We also thank Yao Lu and Anthony Brohan for their help with distributed learning and testing infrastructure.  Tom Small for help with videos and project media. Tuna Toksoz and Garrett Peake for improving the bin reset mechanisms. Satoshi Kataoka,  Michael Ahn, and Ken Oslund for help with the underlying control stack. The above contributions were incredibly enabling for this project.
+                    <br><br>
+                The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
